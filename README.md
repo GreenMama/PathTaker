@@ -35,14 +35,80 @@ Proceed through a series of puzzle stages with the end goal of reaching a demon 
 * Number of remaining **moves** is shown in the upper left corner
 * **Level number** is shown in the upper right corner
 
-# Create custom Levels
+# Create custom levels
+* Create a CSV file in "levels" folder with name "levelX.csv"   (i.e.  level1.csv,  level2.csv, etc)
+* 1-st row should contain Moves,N  (N is the number of moves at level start)
+* other rows should contain comma separated list of character codes
 
-o,o,o,o,o,o
-o,w,s,p,q,o
-o,sp,sp0,sp1,s,o
-o,k,p1,p0,g,o
-o,mr,mr,mr,mr,o
-h,o,o,o,o,o
+| Char code | Description | Image |
+| --- | --- | --- |
+| o | Empty space or v**o**id |  |
+| w | Fixed **w**all, cannot be moved |  |
+| s | **S**tone, can be moved |  |
+| p | S**p**ike trap |  |
+| sp | S**p**ike trap + Stone |  |
+| p0 | Switching S**p**ike trap, off |  |
+| p1 | Switching S**p**ike trap, on |  |
+| sp0 | Switching S**p**ike trap, off + Stone |  |
+| sp1 | Switching S**p**ike trap, on + Stone |  |
+| mr | Skeleton **m**onster |  |
+| k | **K**ey |  |
+| g | **G**ate |  |
+| q | **Q**ueen or demon girl  |  |
+| h | **H**ero  |  |
 
+
+## Examples
+
+**File name:** levels\level1.csv  
+
+**CSV file data:**  
+Moves,5    
+w,p,q    
+w,o,s    
+h,mr,o  
+
+**Level in the game:**
+
+![](https://github.com/GreenMama/PathTaker/blob/main/docs/Sample1.png?raw=true)
+
+
+***
+
+**File name:** levels\level2.csv  
+
+**CSV file data:**  
+Moves,9  
+w,w,q,w  
+w,o,s,o  
+p,s,o,o  
+h,o,o,o   
+
+**Level in the game:**
+
+![](https://github.com/GreenMama/PathTaker/blob/main/docs/Sample2.png?raw=true)
+
+
+***
+
+**File name:** levels\level1.csv  
+
+**CSV file data:**  
+Moves,40  
+o,o,o,o,o,o  
+o,w,s,p,q,o  
+o,sp,sp0,sp1,s,o  
+o,k,p1,p0,g,o  
+o,mr,mr,mr,mr,o  
+h,o,o,o,o,o   
+
+**Level in the game:**
+
+![](https://github.com/GreenMama/PathTaker/blob/main/docs/Sample3.png?raw=true)
 
 # Play Custom Levels
+* Run the game
+* Select "Custom Game" item from the main menu
+
+# Enjoy the GAME!
+
